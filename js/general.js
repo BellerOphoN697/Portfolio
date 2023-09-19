@@ -1,21 +1,29 @@
 $(document).ready(function(){
-	$("#inquiry-form").validate({
+	$("#inquiry").validate({
 		rules:{
-			personname:{
-				required: false,
-				minlength: 4
+			phone:{
+				required: true,
+				minlength: 10,
+				accept:"0-9"
 			},
-			emailid:{
-				required: false,
+			name:{
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			mail:{
+				required: true,
 				minlength: 4,
 				email: true
 			}
+			
+
 
 		},
 		messages:{
-			personname:{
-				"RRRRRR"
-			}
+			phone:"Enter a valid mobile number",
+			name: "Enter a valid name",
+			mail:"Enter a valid email id"
 		}
 	});
 	$(".nav-link").on('click', function(event) {
