@@ -11500,7 +11500,7 @@ pre {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: center;
   padding-left: 0px;
 }
 
