@@ -10,10 +10,7 @@ $(document).ready(function(){
 			name:{
 				required: true,
 				minlength: 2,
-				maxlength: 16,
-				lettersonly: true
-				
-				
+				maxlength: 16
 			},
 			mail:{
 				required: true,
@@ -53,3 +50,7 @@ $(document).ready(function(){
     });
 	
 });
+
+function submitAlert(){
+	alert("Message submitted. Please wait while redirecting")
+}
